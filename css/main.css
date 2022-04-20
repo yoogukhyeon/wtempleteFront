@@ -360,7 +360,7 @@ p.desc{font-size:18px; color:#333; font-weight:300; line-height:1;
 
 @media all and (max-width:700px){
     .visual .visual-txt{top:50%}
-    .visual .visual-txt p{font-size:15px}
+    .visual .visual-txt p{font-size:17px}
     .ediscovery .ediscovery-txt h4{font-size:24px}
 }
 
