@@ -37,4 +37,5 @@ $(document).ready(function(){
     $('.top').click(function(){
         $('html, body').stop().animate({scrollTop:0},800);
     })
+
 })
