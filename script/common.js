@@ -35,7 +35,13 @@ $(document).ready(function(){
     
     //top
     $('.top').click(function(){
-        $('html, body').stop().animate({scrollTop:0},800);
+        if($(window).scrollTop() < 200){
+            let sectionTop = $('#ask').offset().top;
+            $('html, body').stop().animate({scrollTop:sectionTop},800);
+        }else{
+            $('html, body').stop().animate({scrollTop:0},800);
+        }
+      
     })
 
 })

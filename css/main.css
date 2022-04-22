@@ -3,6 +3,38 @@
 /*'Titillium Web'*/
 
 /* :::::::::: MAIN-S :::::::::: */
+.askContainer {
+    margin-bottom: 15px;
+   
+}
+.depth1 > a {
+    color: #8c64ff;
+    transition: all 0.8s ease-in-out;
+}
+
+
+.depth1.active > a {
+    color: #8c64ff;
+    transition: all 0.8s ease-in-out;
+}
+
+.formIcon {
+    position: relative;
+}
+
+.fa-solid {
+    position: absolute;
+    left: 12px;
+    top: 7px;
+    color: #070515 !important;
+    transform: rotate(0deg);
+    transition: transform .7s ease;
+}
+.fa-solid:hover {
+    transform: rotate(360deg);
+}
+
+
 #container{}
 /* VISUAL-S */
 .visual{width:100%;
@@ -255,7 +287,10 @@ p.desc{font-size:18px; color:#333; font-weight:300; line-height:1;
     font-size:20px; line-height:38px;
 }
 .stay .desc span{color:#5a1893}
-.stay label{display:none;}
+
+.stay label{
+    display: none;
+}
 .stay input{height:60px; padding-left:20px; width:920px;
     font-size:15px;
 }
@@ -409,4 +444,27 @@ p.desc{font-size:18px; color:#333; font-weight:300; line-height:1;
 @media all and (max-width:376px){
     .visual .visual-txt li{float:none}
     .visual .visual-txt li+li{margin:10px 0 0}
+}
+
+
+
+@media all and (max-width:990px){
+    textarea{
+        height: 200px; font-size: 15px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 10px !important;
+     
+    }
+
+    .askContainer {
+        text-align: left;
+    }
+    .stay label{
+        display: inline-block ;
+        padding: 8px 0 !important; 
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        font-size: 13px;
+    }
 }
