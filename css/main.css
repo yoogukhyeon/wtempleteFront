@@ -325,6 +325,11 @@ p.desc{font-size:18px; color:#333; font-weight:300; line-height:1;
 /* STAY-E */
 /* :::::::::: MAIN-E :::::::::: */
 
+
+
+
+
+
 @media all and (max-width:1790px){
     .swiper-btn{width:20%}
 }
@@ -397,6 +402,15 @@ p.desc{font-size:18px; color:#333; font-weight:300; line-height:1;
     .visual .visual-txt{top:50%}
     .visual .visual-txt p{font-size:17px}
     .ediscovery .ediscovery-txt h4{font-size:24px}
+    #view_txt > h3 {
+        font-size: 26px !important;
+        line-height: 43px !important;
+    }
+    #view_txt > p {
+        font-size: 16px !important;
+        position: relative;
+        bottom : 160px !important
+    }
 }
 
 @media all and (max-width:640px){
@@ -467,4 +481,6 @@ p.desc{font-size:18px; color:#333; font-weight:300; line-height:1;
         font-weight: 600;
         font-size: 13px;
     }
+
+  
 }

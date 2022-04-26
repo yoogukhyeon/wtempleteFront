@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    AOS.init();
+
     $('a[href="#"]').click(function(e){
         e.preventDefault();
     })

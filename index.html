@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="KO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="author" content="wTemplete ">
-    <link rel="canonical" href="http://wtemplete.dothome.co.kr/" />
+    <link rel="canonical" href="https://wtemplete.shop/" />
     <meta name="robots" content="index, follow">
     <meta name="title" content="wTemplete - 랜딩페이지&온라인마케팅&검색엔진최적화">
     <meta name="description" content="랜딩페이지 제작, 온라인마케팅 검색엔진 최적화, 사이트등록, 메타태그 등록,
@@ -221,7 +221,7 @@
                             <div class="ediscovery-txt">
                                 <h4>광고 랜딩페이지 미리보기</h4>
                                 <p>랜딩페이지 모범사례</p>
-                                <a href="#">MORE VIEW</a>
+                                <a href="/templete.html">MORE VIEW</a>
                             </div>
                         </div>
                     </div>
@@ -408,7 +408,7 @@
                 let num = $(content).eq(0).offset().top;
                 let num1 = $(content).eq(1).offset().top - 300;
                 let num2 = $(content).eq(2).offset().top - 300;
-                let num3 = $(content).eq(3).offset().top;
+                let num3 = $(content).eq(3).offset().top - 300;
 
                 if(scroll > num && scroll < num1){
                     $(menu).siblings().removeClass('active')
@@ -428,9 +428,6 @@
                 }
             })
         })
-
-
-        AOS.init();
 
         $("#input-name").keyup(function (event) {
             regexp = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
