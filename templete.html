@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="KO">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="author" content="wTemplete ">
@@ -26,6 +27,7 @@
     <link rel="apple-touch-icon-precomposed" href="./images/fevicon.png">
     <title>wTemplete</title>
     
+
     <!--webfont-->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -47,11 +49,11 @@
     <script src="./script/common.js"></script>
     <script src="./script/main.js"></script>
     <!--//script-->
-
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
     <!-- font-awasome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
     <style>
          .views_container > div > figure {
              overflow: hidden;
@@ -213,6 +215,15 @@
             transform: scale(1) !important;
         }
     }
+
+    .sample-txt {
+        font-size: 18px;
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        padding: 5px;
+        color: #222;
+        margin-bottom: 15px;
+    }
     </style>
 </head>
 <body>
@@ -221,7 +232,7 @@
     <!--//skip navigation-->
     <!--header-->
     <header id="header">
-        <h1 style="color: #fff;"><a href="#"><img src="./images/wtemplete.png" alt="인텔렉추얼데이터"></a></h1>
+        <h1 style="color: #fff;"><a href="/"><img src="./images/wtemplete.png" alt="wtemplete"></a></h1>
         <nav class="gnb">
             <h2 class="hide">메인메뉴</h2>
             <ul>
@@ -278,37 +289,40 @@
                     <h3 class="tit inner" style="padding: 10px 15px;">Example Templete</h3>
                     <ul class="sample clear">
                         <li data-aos="fade-up" data-aos-duration="900">
+                            <h4 class="sample-txt">대표 예제 랜딩템플렛</h4>
                             <figure><img src="./images/menu2_img1.jpg" alt=""></figure>
 
                             <div class="sample_card">
                                 <div>
                                     <h4>랜딩페이지</h4>
                                     <p>기본 템플렛</p>
-                                    <a href="#">VIEW CLICK</a>
+                                    <a href="https://yoogukhyeon.github.io/woogin_onepage/" target="blank">VIEW CLICK</a>
                                 </div>
                                 <div class="sample_border"></div>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="1100">
+                            <h4 class="sample-txt">커스터마이징 기본 템플렛</h4>
                             <figure><img src="./images/menu2_img2.jpg" alt=""></figure>
 
                             <div class="sample_card">
                                 <div>
                                     <h4>커스터마이징</h4>
                                     <p>커스터마이징 랜딩페이지</p>
-                                    <a href="#">VIEW CLICK</a>
+                                    <a href="http://testw.dothome.co.kr" target="blank">VIEW CLICK</a>
                                 </div>
                                 <div class="sample_border"></div>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="1300">
+                            <h4 class="sample-txt">동영상과 다이나믹한 랜딩템플렛</h4>
                             <figure><img src="./images/dy-2.jpg" alt=""></figure>
                         
                             <div class="sample_card">
                                 <div>
                                     <h4>다이나믹 랜딩페이지</h4>
                                     <p>다이나믹 랜딩페이지</p>
-                                    <a href="#">VIEW CLICK</a>
+                                    <a href="http://wtemplete.dothome.co.kr" target="blank">VIEW CLICK</a>
                                 </div>
                                 <div class="sample_border">
 
@@ -323,6 +337,7 @@
             </div>
         </section>
     </main>
+    <div id="kakao-talk-channel-chat-button" class="kakao"></div>
     <a href="#" class="top"><i></i></a>
     <!--//main-->
     <!--footer-->
@@ -381,7 +396,24 @@
             <p class="f-copy">&copy; 2021. wTemplete inc. all rights reserved.</p>
     </div>
     </footer>
-    
+
+    <!-- kakao 채널및 채팅 추가 -->
+    <script type="text/javascript">
+        // 사용할 앱의 JavaScript 키를 설정해 주세요.
+        Kakao.init('ef1e98ba44fe0b642c3894bf88d97b4e');
+        // 채널 1:1 채팅 버튼을 생성합니다.
+        Kakao.Channel.createChatButton({
+        container: '#kakao-talk-channel-chat-button',
+        channelPublicId: '_xlzzUb',
+        title: 'consult',
+        size: 'small',
+        color: 'yellow',
+        shape: 'mobile',
+        supportMultipleDensities: true,
+    });
+    </script>
+
+
     <script>
         $(window).load(function(){
             $('.views_container').addClass('templeteActive')
