@@ -225,7 +225,7 @@
         <section class="provider inner" >
             <h3 class="tit">THE FIRST<br>AND NEW PROVIDER</h3>
             <p class="desc">랜딩페이지 제작 <span> && </span> 커스터마이징 랜딩페이지 제작</p>
-            <figure><img src="./images/main_con_bg.png" alt="img"></figure>
+            <figure><img src="./images/main_con_bg.png" alt="커스터마이징이미지"></figure>
         </section>
         <section class="ediscovery content">
             <ul class="clear">
@@ -251,7 +251,7 @@
                             </div>
                         </div>
                     </div>
-                    <figure><img src="./images/main_btn_bg02.jpg" alt="img"></figure>
+                    <figure><img src="./images/main_btn_bg02.jpg" alt="랜딩페이지이미지"></figure>
                 </li>
                 <li>
                     <div class="ediscovery-txt-wrap">
@@ -263,7 +263,7 @@
                             </div>
                         </div>
                     </div>
-                    <figure><img src="./images/main_btn_bg03.jpg" alt="img"></figure>
+                    <figure><img src="./images/main_btn_bg03.jpg" alt="SEO설정이미지"></figure>
                 </li>
             </ul>
         </section>
@@ -273,10 +273,10 @@
             <ul>
                 <li class="clear">
                     <div class="analytics-img">
-                        <figure><img src="./images/main_data01.jpg" alt="img"></figure>
+                        <figure><img src="./images/main_data01.jpg" alt="랜딩이미지"></figure>
                     </div>
                         <div class="analytics-txt">
-                        <figure></figure>
+                        <!-- <figure><img src="" alt="랜딩이미지"></figure> -->
                         <h4>랜딩페이지</h4>
                         <p>커스터마이징 & 랜딩페이지 <br> 랜딩페이지를 잘 구축하면 여러분의 <br />
                             비즈니스 성공 가능성을 크게 높일 수 있습니다.
@@ -286,10 +286,10 @@
                 </li>
                 <li class="clear">
                     <div class="analytics-img">
-                        <figure><img src="./images/main_data02.jpg" alt="img"></figure>
+                        <figure><img src="./images/main_data02.jpg" alt="랜딩이미지"></figure>
                     </div>
                         <div class="analytics-txt">
-                        <figure></figure>
+                        <!-- <figure><img src="" alt="랜딩이미지"></figure> -->
                         <h4>Web Analytics</h4>
                         <p>사이트 & 랜딩페이지 노출 & GA연동 <br /> 방문자의 유입 소스나 사이트 내 행동과 같은 유용한 정보를 수집하고 저장, 분석할 수 있습니다. </p>
                         <a href="#" class="goAsk">문의 하기<span></span><div class="analytics-bg"></div></a>
@@ -346,20 +346,20 @@
     <!--footer-->
     <footer id="footer">
         <div class="inner">
-            <h2 class="f-logo" style="color: #fff;"><img src="./images/wtemplete.png" alt="인텔렉추얼데이터">  </h2>
+            <h2 class="f-logo" style="color: #fff;"><img src="./images/wtemplete.png" alt="wtemplete">  </h2>
             <div class="f-wrap clear">
                 <ul class="f-addr">
                     <li>WTEMPLETE &#47; 대표자 : YOO GUK HYEON (유국현)</li>
                     <li>TEL : 010-2059-5897 &#47; E-MAIL : rnrgus5897@gmail.com</li>
                 </ul>
-                <!-- <ul class="f-menu">
+                 <ul class="f-menu">
                     <li class="f-depth1">
                         <h4>COMPANY</h4>
                         <ul class="f-depth2">
                             <li><a href="#">About Us</a></li>
                         </ul>
                     </li>
-                    <li class="f-depth1">
+                 <!--    <li class="f-depth1">
                         <h4>EDISCOVERY</h4>
                         <ul class="f-depth2">
                             <li><a href="#">eDiscovery</a>
@@ -384,19 +384,19 @@
                             <li><a href="#">Relativity</a></li>
                             <li><a href="#">DocuSign</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="f-depth1">
                         <h4>CONTACT</h4>
                         <ul class="f-depth2">
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Newsletter</a></li>
+                            <li class="goAsk"><a href="#">Contact Us</a></li>
+                        <!--     <li><a href="#">Newsletter</a></li>
                             <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Blog</a></li> -->
                         </ul>
                     </li>
-                </ul> -->
+                </ul> 
             </div>
-            <p class="f-copy">&copy; 2021. wTemplete inc. all rights reserved.</p>
+            <p class="f-copy">&copy; 2022. wTemplete inc. all rights reserved.</p>
     </div>
     </footer>
     <!--//footer-->
@@ -422,7 +422,9 @@
         $(document).ready(function(){
             let menu = $('.gnb > ul > li')
             let content = $('#container > .content');
+            let contact = $('.goAsk');
 
+            console.log("contact" , contact)
             $(menu).click(function(e){
                 e.preventDefault();
 
