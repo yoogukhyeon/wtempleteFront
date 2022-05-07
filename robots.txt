@@ -1,4 +1,4 @@
 User-agent: *
 Allow:/
 
-Sitemap: https://wtemplete.shop//sitemap.xml
+Sitemap: https://wtemplete.shop/sitemap.xml

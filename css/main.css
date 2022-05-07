@@ -216,7 +216,7 @@ p.desc{font-size:18px; color:#333; font-weight:300; line-height:1.2;
     text-align:center; font-size:20px
 }
 .analytics .desc span{font-weight:500; color:#5a1893}
-.analytics li{position:relative}
+.analytics li{position:relative;}
 .analytics li:nth-child(1){margin-bottom:300px}
 .analytics li::before{content:""; width:770px; height:770px;
     position:absolute; top:-150px; z-index:-1;
@@ -350,6 +350,7 @@ p.desc{font-size:18px; color:#333; font-weight:300; line-height:1.2;
 }
 
 @media all and (max-width:1150px){
+    .analytics li::before {display: none;}
     .visual .visual-txt h3{height:192px;
         font-size:50px; line-height:64px
     }
@@ -434,8 +435,10 @@ p.desc{font-size:18px; color:#333; font-weight:300; line-height:1.2;
     .analytics li:nth-child(1)>.analytics-img{float:right}
     .analytics .analytics-img figure{height:400px;}
     .analytics .analytics-txt{width:100%}
-    .analytics .analytics-txt h4{margin-bottom:20px;
+    .analytics .analytics-txt h4{
+        margin-bottom:20px;
         font-size:28px;
+        margin-top: 15px
     }
     .analytics .analytics-txt p{font-size:14px; line-height:25px;}
     .stay{padding:100px 0}
