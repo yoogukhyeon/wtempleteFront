@@ -14,7 +14,7 @@
     <meta name="naver-site-verification" content="6176ea57b2926a6f4205ebbdbfae0b09aebdb390" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="author" content="wTemplete ">
-    <link rel="canonical" href="https://wtemplete.shop/" />
+    <link rel="canonical" href="https://wtemplete.shop" />
     <meta name="robots" content="index, follow">
     <meta name="title" content="wTemplete - 랜딩페이지&온라인마케팅&검색엔진최적화">
     <meta name="description" content="랜딩페이지 제작, 온라인마케팅 검색엔진 최적화, 사이트노출, 메타태그 등록, GA연동
@@ -419,7 +419,51 @@
 
 
     <script>
+        let hit 
+        function setCookie(name){
+            let date = new Date();
+            hit = 1
+            date.setDate(date.getDate() + 1)
+
+            let myCookie = "";
+            myCookie += `${name} = ${hit};`
+            myCookie += `Expires=${date.toUTCString()}`;
+
+            document.cookie = myCookie;
+        }
+       
+
+       
         
+        function checkCookie(name){
+            let cookies = document.cookie.split(';');
+            let visited = false;
+            for(let i in  cookies){
+                if(cookies[i].indexOf(name) > -1){
+                    visited = true;
+                }
+            }
+          
+            if(!visited){
+                setCookie('userCount')
+                hit = 1;
+                $.ajax({
+                    url : "http://wtempleteapi.cafe24app.com/api/count",
+                    dataType : "JSON",
+                    type : "POST",
+                    data : {
+                        hit
+                    },
+                    success : function(data){
+                    },
+                    error : function(err){
+                        console.log("Error", err)
+                    }
+                })
+            }
+        }
+       
+        checkCookie('userCount')
 
 
 
